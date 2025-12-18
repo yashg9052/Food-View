@@ -16,7 +16,7 @@ export const createUser = async ({ fullName, email, password }) => {
   return await userModel.create({ fullName, email, password });
 };
 
-export const createToken = async (id) => {
+export const createToken =  (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET);
 };
 export const checkIfUserExists = async (email, password) => {

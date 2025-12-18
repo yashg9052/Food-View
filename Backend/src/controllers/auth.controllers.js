@@ -155,9 +155,10 @@ export const postFoodPartnerLogin = async (req, res) => {
 
     res.cookie("token", token, {
       httpOnly: true,
-      secure: true,
+      sameSite: "lax",
+      secure: false,
     });
-
+    
     res.status(200).json({
       message: "Food partner logged in successfully",
       foodPartner: {
