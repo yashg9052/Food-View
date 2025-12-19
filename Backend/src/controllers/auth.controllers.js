@@ -12,8 +12,9 @@ import {
 import jwt from "jsonwebtoken";
 
 export const postregisterUser = async (req, res) => {
-  try {
+  try {   
     const { fullName, email, password } = req.body;
+    
 
     if (!fullName || !email || !password) {
       return res.status(400).json({ message: "All fields are required" });

@@ -1,0 +1,43 @@
+:root{
+  --bg: #ffffff;
+  --card: #f7f7f8;
+  --text: #0f1724;
+  --muted: #55606a;
+  --accent: #ff6b35;
+  --input-bg: #ffffff;
+  --border: #e6e9ee;
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg: #0b1220;
+    --card: #0f1724;
+    --text: #e6eef6;
+    --muted: #9aa6b2;
+    --accent: #ff8a4b;
+    --input-bg: #0b1220;
+    --border: #16202a;
+  }
+}
+
+/* manual overrides via html[data-theme] — when set, this takes precedence */
+html[data-theme="dark"]{
+  --bg: #0b1220;
+  --card: #0f1724;
+  --text: #e6eef6;
+  --muted: #9aa6b2;
+  --accent: #ff8a4b;
+  --input-bg: #0b1220;
+  --border: #16202a;
+}
+
+html[data-theme="light"]{
+  --bg: #ffffff;
+  --card: #f7f7f8;
+  --text: #0f1724;
+  --muted: #55606a;
+  --accent: #ff6b35;
+  --input-bg: #ffffff;
+  --border: #e6e9ee;
+}
+
